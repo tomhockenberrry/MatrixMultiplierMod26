@@ -33,8 +33,8 @@ def matrix_multiplication_mod_26(A,B): #multiplies matrices together
     return result
 
 
-m1 = [[2,-5,12],[5,1,-13],[0,8,1]]
-m2 = [[1,2,3],[4,5,6],[7,8,9]]
+m1 = get_input()
+m2 = get_input()
 
 for elem in matrix_multiplication_mod_26(m1,m2):
     print(elem)
