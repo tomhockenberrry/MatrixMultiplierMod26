@@ -38,11 +38,3 @@ m2 = get_input()
 
 for elem in matrix_multiplication_mod_26(m1,m2):
     print(elem)
-
-
-
-
-
-
-
-
