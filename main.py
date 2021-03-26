@@ -3,7 +3,7 @@ def get_input():
     n = int(input())
     matrix = []
     for i in range(n): #takes first matrix, input rows as numbers separated by spaces
-        print("Row", i, "?")
+        print("What are the entries of row", i+1, "? Please separate the numbers by a single space.")
         matrix.append([int(j) for j in input().split()])
     return matrix
 
@@ -36,5 +36,8 @@ def matrix_multiplication_mod_26(A,B): #multiplies matrices together
 m1 = get_input()
 m2 = get_input()
 
-for elem in matrix_multiplication_mod_26(m1,m2):
-    print(elem)
+if len(m1) != len(m2[1]):
+    print("Multiplication is not defined for these matrices.")
+else:
+    for elem in matrix_multiplication_mod_26(m1,m2):
+        print(elem)
