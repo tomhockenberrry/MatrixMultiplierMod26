@@ -36,8 +36,6 @@ def matrix_multiplication_mod_26(A,B): #multiplies matrices together
 m1 = get_input()
 m2 = get_input()
 
-if len(m1) != len(m2[1]):
-    print("Multiplication is not defined for these matrices.")
-else:
-    for elem in matrix_multiplication_mod_26(m1,m2):
-        print(elem)
+
+for elem in matrix_multiplication_mod_26(m1,m2):
+    print(elem)
